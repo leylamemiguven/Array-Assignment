@@ -6,6 +6,7 @@
     --bg-light: #ECEAEA;
     --text-dark: #1a1a1a;
     --text-light: #ffffff;
+    --bg-blue: #C2EFFF;
   }
   
   * {
@@ -16,7 +17,7 @@
   
   body {
     font-family: "Hanken Grotesk", sans-serif;
-    background: var(--bg-light);
+    /* background: var(--bg-light); */
     color: var(--text-dark);
     line-height: 30px;
     font-size: 18px;
@@ -36,8 +37,23 @@
     line-height: 55px;
     font-size: 48px;
     font-weight: bold;
-    padding: 0 0 2em 0 ;
+    padding: 0 0 1rem 0 ;
 
+  }
+
+  h3{
+    line-height: 42px;
+    font-size: 33px;
+    font-weight: bold;
+
+
+  }
+
+
+  .all-caps{
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: bold;
   }
   
   .logo{
@@ -62,6 +78,18 @@
     font-weight: bold;
     padding: 1rem;
     border: none;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: var(--text-dark);
+    line-height: 30px;
+    font-size: 18px;
+  }
+
+  .section2-btn{
+    background: var(--bg-blue);
+    color: var(--text-dark);
+    
+
+
   }
   
   .early-access-btn{
@@ -113,7 +141,7 @@
   }
 
   .section1{
-    background: red;
+    background: var(--bg-blue);
   }
   
   .portals {
@@ -123,14 +151,51 @@
   
   .portal {
     flex: 1;
-    background: #ddd;
-    padding: 1rem;
+    padding: 2rem 2rem 2rem 0;
     transition: background 0.3s ease;
+  }
+
+  .section2-portal{
+    color: var(--text-light);
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 579px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 2rem;
+  }
+
+  .s2-text{
+    display: flex;
+
+  }
+
+  
+
+  .s2-img1{
+    background-image: url("assets/s2-img1.png");
+  }
+
+  .s2-img2{
+    background-image: url("assets/s2-img2.png");
+  }
+
+  .s2-img3{
+    background-image: url("assets/s2-img3.png");
+  }
+  .icon-img{
+    padding: 2rem 0 2rem 0;
   }
   
   .portal:hover {
     background: var(--accent-color);
     color: white;
+  }
+
+  .hidden{
+    opacity: 0%;
   }
   
   .news-slider {
