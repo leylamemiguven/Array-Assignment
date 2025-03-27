@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #6A00FF;
+    --accent-color: #FF5C38;
+    --bg-light: #ECEAEA;
+    --text-dark: #1a1a1a;
+    --text-light: #ffffff;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Hanken Grotesk", sans-serif;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 30px;
+    font-size: 18px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--text-light);
+    font-weight: bold;
+    font-size: 21px;
+  }
+
+  h2{
+    line-height: 55px;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 0 0 2em 0 ;
+
+  }
+  
+  .logo{
+    display: flex;
+  }
+
+
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--text-dark);
+    padding: 0 1rem;
+  }
+
+  button{
+    font-weight: bold;
+    padding: 1rem;
+    border: none;
+  }
+  
+  .early-access-btn{
+    background: var(--primary-color);
+    color: var(--text-light);
+  }
+  
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: var(--text-light);
+  }
+  
+  .banner-text {
+    padding: 10rem;
+    
+  }
+
+  .banner-title{
+    font-size: 94px;
+    font-weight: bold;
+    line-height: 105px;
+  }
+
+  .banner-body-text{
+    padding: 2rem 0;
+
+  }
+  
+  /* .banner-carousel {
+    flex: 1;
+    max-width: 400px;
+    height: 250px;
+    background: gray;
+  } */
+
+  .banner-arrow {
+    position: absolute;
+    bottom: -20px; 
+    right: -20px;  
+    width: 80px;   
+  }
+  
+  .section {
+    padding: 10rem;
+    display: block;
+  }
+
+  .section1{
+    background: red;
+  }
+  
+  .portals {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .portal {
+    flex: 1;
+    background: #ddd;
+    padding: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .portal:hover {
+    background: var(--accent-color);
+    color: white;
+  }
+  
+  .news-slider {
+    overflow: hidden;
+    display: flex;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .news-card {
+    min-width: 250px;
+    margin-right: 1rem;
+    scroll-snap-align: start;
+    background: white;
+    padding: 1rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .banner {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .portals {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .banner-carousel {
+      width: 100%;
+      height: auto;
+    }
+  
+    .news-slider {
+      flex-direction: row;
+      overflow-x: scroll;
+    }
+  }
+  
