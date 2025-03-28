@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --primary-color: #6A00FF;
+    --primary-color-purple: #6A00FF;
+    --primary-color-pink: #E6B8FF;
+    --primary-color-orange: #FF8067;
     --bg-orage: #EA520D;
     --bg-light: #ECEAEA;
     --text-dark: #1a1a1a;
@@ -88,53 +90,126 @@
     color: var(--text-dark);
     line-height: 30px;
     font-size: 18px;
+    transition: all 0.3s ease;
+  }
+
+  button:hover{
+    box-shadow: -7px 7px 0 0 var(--bg-orage);
   }
 
 
-    /* Banner */
+/* Banner */
+
+
+    .send-a-package,
+    .become-a-driver,
+    .host-a-locker {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .send-a-package:hover{
+        background: var(--primary-color-purple);
+        color: var(--text-light);
+        box-shadow: -7px 7px 0 0 var(--bg-orage);
+    }
+
+    .become-a-driver:hover{
+        background: var(--primary-color-pink);
+        color: var(--text-light);
+        box-shadow: -7px 7px 0 0 var(--bg-orage);
+    }
+
+    .host-a-locker:hover{
+        background: var(--primary-color-orange);
+        box-shadow: -7px 7px 0 0 var(--bg-orage);
+    }
   
     .early-access-btn{
-        background: var(--primary-color);
+        background: var(--primary-color-purple);
         color: var(--text-light);
       }
-      
-      .banner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2rem;
-        background: var(--text-light);
+
+    
+      .blue-underline {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 4px;
+        transition: all 0.3s ease;
       }
       
-      .banner-text {
-        padding: 10rem;
-        
-      }
-    
-      .banner-title{
-        font-size: 94px;
-        font-weight: bold;
-        line-height: 105px;
-      }
-    
-      .banner-body-text{
-        padding: 2rem 0;
-    
-      }
-      
-      /* .banner-carousel {
-        flex: 1;
-        max-width: 400px;
-        height: 250px;
-        background: gray;
-      } */
-    
-      .banner-arrow {
+      .blue-underline::after {
+        content: "";
         position: absolute;
-        bottom: -20px; 
-        right: -20px;  
-        width: 80px;   
+        bottom: 2px;
+        left: 0;
+        width: 0;
+        height: 8px;
+        background-color: var(--bg-blue); /* adjust blue if needed */
+        transition: width 0.3s ease;
       }
+      
+      .blue-underline:hover::after {
+        width: 100%;
+      }
+      
+      
+    .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: var(--text-light);
+    }
+    
+    .banner-text {
+    padding: 10rem;
+    
+    }
+
+    .banner-title{
+    font-size: 94px;
+    font-weight: bold;
+    line-height: 105px;
+    }
+
+    .banner-body-text{
+    padding: 2rem 0;
+
+    }
+    
+    .banner-arrow {
+    position: absolute;
+    bottom: -20px; 
+    right: -20px;  
+    width: 80px;   
+    }
+
+    .banner-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    overflow: hidden;
+    }
+    
+    .carousel-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    z-index: 1;
+    }
+    
+    .carousel-img.active {
+    opacity: 1;
+    z-index: 2;
+    }
   
       
 /* /Banner */
@@ -178,6 +253,10 @@
 
   }
 
+  .hidden{
+    opacity: 0%;
+}
+
   .section2-btn{
     background: var(--bg-blue);
     color: var(--text-dark);
@@ -199,8 +278,7 @@
     background-repeat: no-repeat; 
     height: 579px; 
 
-    
-    
+
   }
 
   .s2-img2{
@@ -226,6 +304,8 @@
   }
 
 
+
+
   .section3{
     background: var(--bg-orage);
     display:flex;
@@ -237,10 +317,7 @@
     padding: 2rem 0 2rem 0;
   }
   
-  /* .portal:hover {
-    background: var(--accent-color);
-    color: white;
-  } */
+  */
 
   .hidden{
     opacity: 0%;
