@@ -74,13 +74,6 @@
     display: flex;
   }
 
-
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-  }
   
   a {
     text-decoration: none;
@@ -477,7 +470,7 @@
   @media (max-width: 932px) {
 
   .section, footer{
-    padding: 5rem;
+    padding: 5rem 2rem;
   }
 
   
