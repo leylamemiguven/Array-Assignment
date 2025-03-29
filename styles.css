@@ -191,10 +191,10 @@
     }
     
     .banner-arrow {
-    position: absolute;
-    bottom: -20px; 
-    right: -20px;  
-    width: 80px;   
+        position: absolute;
+        bottom: -300px;
+        right: 100px;
+        width: 200px;
     }
 
     .banner-carousel {
@@ -528,6 +528,14 @@
     text-align: center;
   }
 
+  .banner-arrow {
+    position: absolute;
+    bottom: -1350px;
+    right: 50px;
+    width: 100px;
+}
+
+
   .portals {
     flex-direction: column;
   }
@@ -563,6 +571,11 @@
 
   .section3, .section4{
     flex-direction: column;
+  }
+
+  .blue-arrow-vector{
+    width: 10rem;
+    margin-left: 10rem;
   }
 
   .menu-toggle{
