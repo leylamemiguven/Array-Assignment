@@ -26,6 +26,7 @@
   startCarousel();
 
 
+// Changing images and bg colors on hover
 const s2Img1 = document.querySelector('.s2-img1');
 const section2 = document.querySelector('.section2');
 
@@ -60,4 +61,19 @@ s2Img3.addEventListener('mouseleave', () => {
 });
 
 
+//toggle menu
 
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.querySelector('.nav-links');
+const menuIcon = document.getElementById('menuIcon');
+
+let isOpen = false;
+
+menuToggle.addEventListener('click', () => {
+  isOpen = !isOpen;
+  navLinks.classList.toggle('active');
+
+  menuIcon.src = isOpen 
+    ? 'assets/Close Box.png' // your custom close icon
+    : 'assets/Menu Box.png'; // your hamburger icon
+});

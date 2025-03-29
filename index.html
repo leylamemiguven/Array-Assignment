@@ -13,17 +13,20 @@
     <div class="logo">
         <img src="assets/Logo.svg" alt="Avondi Logo" height="40">
     </div>
-    <div>  
-        <a class="navbar-item send-a-package" href="#">Send a Package</a>
-        <a class="navbar-item become-a-driver" href="#">Become a Driver</a>
-        <a class="navbar-item host-a-locker" href="#">Host a Locker</a>
+    <div class="nav-links" id="navLinks">
+        <div class="nav-links-s1">  
+            <a class="navbar-item send-a-package" href="#">Send a Package</a>
+            <a class="navbar-item become-a-driver" href="#">Become a Driver</a>
+            <a class="navbar-item host-a-locker" href="#">Host a Locker</a>
+        </div>
+        <div>
+            <a class="navbar-item blue-underline" href="#">News & Press</a>
+            <a class="navbar-item blue-underline" href="#">Contact</a>
+        </div>
     </div>
-    <div>
-        <a class="navbar-item blue-underline" href="#">News & Press</a>
-        <a class="navbar-item blue-underline" href="#">Contact</a>
-    </div>
-    <div class="menu-box">
-      <img src="assets/Menu Box.png" alt="box with lines" />
+        
+    <div class="menu-toggle" id="menuToggle">
+        <img id="menuIcon" src="assets/Menu Box.png" alt="box with lines" />
     </div>
 
 
@@ -104,19 +107,19 @@
     <div class="portals">
       <div class="portal section2-portal s2-img1">
         <p class="all-caps">HOW DO I</p>
-        <h3>Send a package</h3>
+        <div class="portal-title"><h3>Send a package</h3><img class="arrow-right" src="assets/arrow-right.png" alt="arrow-pointing-right"/></div>
         <p class="s2-portal-text">Sending parcels with Avondi is simple. Just use the app to schedule a delivery and drop it at your nearest locker. </p>
         <button class="section2-btn">Send Your Parcel</button>
       </div>
       <div class="portal section2-portal s2-img2">
         <p class="all-caps">I'D LIKE TO</p>
-        <h3>Drive for Avondi</h3>
+        <div class="portal-title"><h3>Drive for Avondi</h3> <img class="arrow-right" src="assets/arrow-right.png" alt="arrow-pointing-right"/></div>
         <p class="s2-portal-text">Earn money every time you drive. The app connects you with delivery opportunities that fit your schedule and your route.</p>
         <button class="section2-btn">Start Driving</button>
       </div>
       <div class="portal section2-portal s2-img3">
         <p class="all-caps">I WANT TO</p>
-        <h3>Host a locker</h3>
+        <div class="portal-title"><h3>Host a locker</h3><img class="arrow-right" src="assets/arrow-right.png" alt="arrow-pointing-right"/></div>
         <p class="s2-portal-text">Attract more foot traffic to your business. Join our network and provide a secure, convenient location for parcel pickups.</p>
         <button class="section2-btn">Secure a Locker</button>
       </div>

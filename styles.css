@@ -99,8 +99,18 @@
 
 
 /* Banner */
-    .menu-box{
+    .menu-toggle{
       display:none;
+      cursor: pointer;
+    }
+
+    .nav-links{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links-s1{
+        margin-right: 6rem;
     }
 
     .send-a-package,
@@ -269,7 +279,16 @@
 
   .hidden{
     opacity: 0%;
-}
+  }
+
+  .portal-title{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .arrow-right{
+    display:none;
+  }
 
   .section2-btn{
     background: var(--bg-blue);
@@ -473,6 +492,36 @@
     padding: 5rem 2rem;
   }
 
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: var(--bg-blue);
+    padding: 1rem 2rem;
+    z-index: 99;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .navbar-item {
+    display: block; /* Ensure items show when nav-links is active */
+    padding: 1rem 0;
+  }
+
+  .nav-links a {
+    display: flex;
+    padding: 1rem 0;
+  }
+
+  .nav-links-s1 {
+    margin-right: 0;
+  }
+
   
   .banner {
     flex-direction: column;
@@ -488,6 +537,7 @@
     background-position: center -180px;
     background-repeat: no-repeat;
     background-size: 200px auto;
+    color: var(--text-dark)
 
   }
 
@@ -501,12 +551,21 @@
     overflow-x: scroll;
   }
 
+  .s2-portal-text, .section2-btn{
+    display: none;
+  }
+
+  .arrow-right{
+    display: block;
+    height: 50px;
+  }
+
 
   .section3, .section4{
     flex-direction: column;
   }
 
-  .menu-box{
+  .menu-toggle{
     display:block;
   }
 
@@ -517,6 +576,7 @@
   .s2-img1, .s2-img2, .s2-img3{
     width:100%;
   }
+  
 
   .hidden{
     display: none;
